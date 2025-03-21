@@ -1,0 +1,52 @@
+<svg width="453" height="324" viewBox="0 0 453 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_881_14778)">
+<path id="path1" d="M-32 315.385C68.9231 315.385 68.8603 149.932 169.783 149.932C305.532 165.581 298.311 70.1184 375.572 62.2634C476.495 62.2634 461.498 -44.9068 573.539 -25.6943" stroke="url(#paint0_linear_881_14778)" stroke-width="1.33"/>
+<path id="path2" d="M-26.1599 322.136C62.5072 332.379 90.803 298.972 132.45 257.111C145.291 244.204 163.412 238.726 181.601 237.916C281.809 233.454 293.153 153.158 361.176 145.96C457.852 145.96 416.51 249.712 551.386 226.309" stroke="url(#paint3_linear_881_14778)" stroke-width="1.33"/>
+
+<circle r="5" fill="url(#paint5_linear_881_14778)">
+<animateMotion repeatCount="indefinite" dur="5s">
+<mpath href="#path1"/>
+</animateMotion>
+</circle>
+
+<circle r="5" fill="url(#paint5_linear_881_14778)">
+<animateMotion repeatCount="indefinite" dur="5s" begin="1s">
+<mpath href="#path1"/>
+</animateMotion>
+</circle>
+
+<circle r="5" fill="url(#paint5_linear_881_14778)">
+<animateMotion repeatCount="indefinite" dur="6s">
+<mpath href="#path2"/>
+</animateMotion>
+</circle>
+
+<circle r="5" fill="url(#paint5_linear_881_14778)">
+<animateMotion repeatCount="indefinite" dur="6s" begin="1s">
+<mpath href="#path2"/>
+</animateMotion>
+</circle>
+</g>
+<defs>
+<clipPath id="clip0_881_14778">
+<rect width="453" height="324" fill="white"/>
+</clipPath>
+<linearGradient id="paint5_linear_881_14778" x1="161.619" y1="244.001" x2="150.017" y2="245.117" gradientUnits="userSpaceOnUse">
+<stop offset="50%" stop-color="#008CFF"/>
+<stop offset="30%" stop-color="#A900FF"/>
+</linearGradient>
+</defs>
+<defs>
+<linearGradient id="paint0_linear_881_14778" x1="512.985" y1="349.723" x2="269.725" y2="-162.662" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint3_linear_881_14778" x1="493.632" y1="341.804" x2="414.86" y2="36.5898" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<clipPath id="clip0_881_14778">
+<rect width="453" height="324" fill="white"/>
+</clipPath>
+</defs>
+</svg>
