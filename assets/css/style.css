@@ -89,6 +89,8 @@ a {
     height: 123px;
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50.21%, rgba(255, 255, 255, 0) 100%);
     filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     border-radius: 275px;
     transform: rotate(30deg);
     position: absolute;
@@ -268,7 +270,9 @@ header .container {
     position: absolute;
     top: 130px;
     left: 68px;
-    filter: blur(30px); 
+    filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     transition: all 0.3s;
 }
 .coin.ch-right {
@@ -309,6 +313,8 @@ header .container {
 }
 .coin:hover {
     filter: none;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
     cursor: pointer;
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
@@ -566,6 +572,7 @@ header .container {
     transition-property: transform, box-shadow;
     transition-timing-function: ease-out;
     transform: rotate3d(0);
+    position: relative;
 }
 .canvas-card:hover {
     transition-duration: 150ms;
@@ -872,6 +879,8 @@ header .container {
     border-radius: 100%;
     background: radial-gradient(89.19% 100% at 50.14% 0%, #008CFF 20%, #9AD1FF 38.36%, #FFB43C 64.77%, #A900FF 100%);
     filter: blur(26.2321px);
+    -webkit-backdrop-filter: blur(26.2321px);
+    backdrop-filter: blur(26.2321px);
     position: absolute;
     top: 0px;
     left: 0px;

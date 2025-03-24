@@ -123,6 +123,11 @@
 	    width: 45px;
 	    line-height: 36px;
 	}
+	body .compatible-chains > .compatible-media {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 980px;
+    }
 }
 @media screen and (min-width: 575px) {
 	.r-menu,
@@ -134,6 +139,14 @@
 	.hero-text .hero-img > img {
 	    max-width: 260px;
 	}
+	.compatible-chains .compatible-text {
+	    max-width: 575px;
+	}
+	body .compatible-chains > .compatible-media {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 980px;
+    }
 }
 @media screen and (max-width: 767px) {
 	.responsive-none {
@@ -450,7 +463,13 @@
 	    height: auto;
 	}
 	.compatible-chains {
-	    padding: 80px 0px;
+	    padding: 200px 0px;
+	}
+	.compatible-chains > .compatible-media {
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    width: 1350px;
 	}
 	.people-card {
 	    width: 50%;
@@ -488,7 +507,13 @@
         width: 1920px;
     }
 	.compatible-chains {
-	    padding: 100px 0px;
+	    padding: 250px 0px;
+	}
+	.compatible-chains > .compatible-media {
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    width: 1660px;
 	}
 	.evolution {
 	    padding-bottom: 240px;
@@ -527,7 +552,6 @@
 	.coin.coin5 {
 	    display: none;
 	}
-
 }
 @media screen and (max-width: 1728px) and (min-width: 1200px) {
 	.evolution {
@@ -542,6 +566,12 @@
 	}
 	.hero-text .hero-img > img {
 	    width: 240px;
+	}
+	.compatible-chains > .compatible-media {
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    width: 1660px;
 	}
 }
 @media screen and (max-width: 1799px) and (min-width: 1601px){
