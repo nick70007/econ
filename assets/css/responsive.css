@@ -30,14 +30,22 @@
 	    z-index: 99;
 	    transition: all 0.3s;
 	}
+	body header {
+	    padding: 10px 0px;
+	    background-color: rgb(255 255 255 / 4%);
+	}
+	body .logo img {
+        max-width: 40px;
+    }
 	.mobile-header {
         position: fixed;
         top: 0px;
         left: 0px;
         right: 0px;
-        background-color: #fff;
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
-        padding: 15px 15px 25px;
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0px 70.1593px 70.1593px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(35.0796px);
+        padding-bottom: 50px;
         z-index: 99;
         transition: all 0.3s;
         transform: translateY(-100%);
@@ -50,22 +58,32 @@
     	visibility: visible;
     }
 	.mobile-header > .m-top {
-	    display: flex;
-	    align-items: center;
-	    justify-content: space-between;
-	}
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255 255 255 / 4%);
+        padding: 10px .75rem;
+    }
 	.m-logo img {
-	    width: 50px;
-	    height: 48px;
-	}
+        max-width: 40px;
+        height: 42px;
+        filter: invert(1);
+    }
 	.m-close > svg {
-	    width: 40px;
-	    height: 40px;
+	    width: 26px;
+	    height: 26px;
 	}
 	.m-btn .h-btn {
-	    display: flex !important;
-	    justify-content: center;
-	    margin-top: 20px;
+        display: block !important;
+        max-width: 258px;
+        margin: 40px auto 0px;
+    }
+    .m-btn .h-btn > .btn {
+	    width: 100%;
+	    margin-bottom: 12px;
+	}
+	.m-btn .h-btn > .btn:last-child {
+	    margin-bottom: 0px;
 	}
 	.m-btn .btn.btn-primary {
 	    border-color: #000;
@@ -77,6 +95,19 @@
 	.h-btn {
 	    display: none !important;
 	}
+	.m-btn .h-btn .btn.btn-secondary::before {
+		content: none;
+	}
+	.btn.btn-primary.gradiant-border {
+	    background: linear-gradient(256deg, #008CFF 0%, #A900FF 46%, #FFB43C 77%, #FFFFFF 100%);
+	    padding: 1px;
+	}
+	.m-btn .h-btn .btn.btn-primary > span {
+	    display: block;
+	    background-color: #fff;
+	    border-radius: 9px;
+	    padding: 12px 12px;
+	}
 	/* Responsive Header */
 }
 @media screen and (max-width: 575px){
@@ -87,7 +118,7 @@
 	    max-width: 45px;
 	}
 	.hero-text {
-	    margin-top: 20px;
+	    margin-top: 30px;
 	}
 	.hero-text .hero-img > img {
 	    max-width: 240px;
