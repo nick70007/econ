@@ -325,6 +325,12 @@
 	    margin: 0px auto;
 	    display: block;
 	}
+	.exponentially-card.ex-5 .bank-ico {
+	    margin-top: 3px;
+	}
+	.exponentially-card.ex-5 .bank-ico > img {
+	    max-width: 60px;
+	}
 	.canvas-card.c-card-4 {
 	    padding: 40px 24px;
 	}
@@ -543,6 +549,9 @@
 	}
 	.canvas-card.c-card-5 {
 	    padding: 60px 24px 240px;
+	}
+	.exponentially-card.ex-5 .bank-ico > img {
+	    max-width: 72px;
 	}
 }
 @media screen and (max-width: 1199px) and (min-width: 992px) {
