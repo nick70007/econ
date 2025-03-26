@@ -1474,23 +1474,54 @@
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
       <script src="assets/js/custom.js"></script>
       <script type="text/javascript">
-         gsap.registerPlugin(ScrollTrigger);
+         $(document).ready(function() {
+             //detect mobile screen size an create a var
+             width = $(window).width();
+             console.log("width : ",width)
+             // conditional  to hide responsive Menu name or button on >900px screens
+             if (width >= 768) {
+               gsap.registerPlugin(ScrollTrigger);
 
-         gsap.timeline({scrollTrigger: {
-         trigger: '.hero-img',
-                         start: '50% 80%',
-                         end: '0%',
-                         scrub: 1,
-                         pin: true,
-                         markers: false
-                     }
-         })
+               gsap.timeline({scrollTrigger: {
+               trigger: '.hero-img',
+                               start: '50% 80%',
+                               end: '0%',
+                               scrub: 1,
+                               pin: true,
+                               markers: false
+                           }
+               })
 
-         .fromTo('.hero-img img', {
-                     'transform' : 'translate(0px, 0px) rotateX(30deg) scale(1.4, 1.4)', 'opacity':1
-                 }, {
-                     'transform' : 'translate(0px, 0px) rotateX(0deg) scale(1, 1)', 'opacity':1
-         }, 0)
+               .fromTo('.hero-img img', {
+                           'transform' : 'translate(0px, 0px) rotateX(30deg) scale(1.4, 1.4)', 'opacity':1
+                       }, {
+                           'transform' : 'translate(0px, 0px) rotateX(0deg) scale(1, 1)', 'opacity':1
+               }, 0)
+             }
+
+             // conditional to hide entire menu and show mobile menu
+
+             if (width <= 767) {
+               gsap.registerPlugin(ScrollTrigger);
+
+               gsap.timeline({scrollTrigger: {
+               trigger: '.hero-img',
+                               start: '70% 80%',
+                               end: '0%',
+                               scrub: 1,
+                               pin: true,
+                               markers: false
+                           }
+               })
+
+               .fromTo('.hero-img img', {
+                           'transform' : 'translate(0px, 0px) rotateX(30deg) scale(1.4, 1.4)', 'opacity':1
+                       }, {
+                           'transform' : 'translate(0px, 0px) rotateX(0deg) scale(1, 1)', 'opacity':1
+               }, 0)
+                 
+             }
+         });
       </script>
       <script type="text/javascript">
          
