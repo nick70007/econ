@@ -192,9 +192,6 @@
 	.faq  .page-title {
 	    margin-bottom: 30px;
 	}
-	.people-main {
-	    width: 1920px;
-	}
 	.p-marquee .people-marquee {
 	    flex-wrap: nowrap;
 	}
@@ -523,9 +520,6 @@
 	.people-card {
 	    width: 50%;
 	}
-	.people-main {
-		width: 1920px;
-	}
 	.evolution {
 	    padding-bottom: 120px;
 	}
@@ -555,9 +549,6 @@
 	}
 }
 @media screen and (max-width: 1199px) and (min-width: 992px) {
-	.people-main {
-        width: 1920px;
-    }
 	.compatible-chains {
 	    padding: 250px 0px;
 	}

@@ -1,3 +1,8 @@
+AOS.init({
+  duration: 1200,
+  once: true,
+});
+
 // Preloader //
 $(window).on('load', function() {
     $('.preloader').delay(1000).fadeOut('slow');
@@ -43,7 +48,7 @@ $(".faq-box-list > a").on("click", function() {
 });
 
 // Crad Hover Animation //
-const $card = document.querySelectorAll('.canvas-card');
+const $card = document.querySelectorAll('.canvas-card, .exponentially-card');
 let bounds;
 
 function rotateToMouse(e,ele) {
