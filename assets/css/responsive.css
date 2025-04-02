@@ -172,7 +172,7 @@
 	    max-width: 260px;
 	}
 	.compatible-chains .compatible-text {
-	    max-width: 575px;
+	    max-width: 520px;
 	}
 	body .compatible-chains > .compatible-media {
         left: 50%;
@@ -617,9 +617,14 @@
 	    width: 1660px;
 	}
 }
-@media screen and (max-width: 1799px) and (min-width: 1601px){
-	
-}
-@media screen and (max-width: 1899px) and (min-width: 1800px){
-	
+@media screen and (min-width: 1920px) {
+	.pin-spacer {
+	    margin: 0px !important;
+	}
+	.hero-img {
+	    padding-top: 60px !important;
+	}
+	.people-main {
+		width: 100%;
+	}
 }

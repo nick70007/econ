@@ -67,6 +67,10 @@ a {
     outline: 0 !important;
     box-shadow: none !important;
     display: inline-block;
+    transition: all 0.3s;
+}
+.btn.btn-primary:hover {
+    opacity: .8;
 }
 .btn.btn-secondary {
     background: rgba(255, 255, 255, 0.08);
@@ -82,6 +86,10 @@ a {
     display: inline-block;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s;
+}
+.btn.btn-secondary:hover {
+    opacity: .8;
 }
 .btn.btn-secondary::before {
     content: "";
@@ -995,15 +1003,15 @@ header .container {
 }
 .compatible-text {
     max-width: 630px;
-    margin: 0px auto;
+    margin: 70px auto;
 }
 .compatible-text > span {
-    font-size: 58px;
+    font-size: 68px;
     font-weight: 600;
     font-family: "Bricolage Grotesque", sans-serif;
 }
 .compatible-text > h2 {
-    font-size: 58px;
+    font-size: 52px;
     font-weight: 600;
     margin-bottom: 20px;
     font-family: "Bricolage Grotesque", sans-serif;
@@ -1213,6 +1221,10 @@ header .container {
     top: 50%;
     transform: translateY(-50%);
     right: 12px;
+    transition: all 0.3s;
+}
+.econ-form .econ-msg:hover {
+    opacity: .8;
 }
 
 .f--top {
