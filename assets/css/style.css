@@ -775,6 +775,9 @@ header .container {
 .exponentially-card .ex-media.e-rotate-ani {
     margin-bottom: -208px;
 }
+.my-en.e-rotate-ani{
+    margin-bottom: -208px; 
+}
 .exponentially-card.ex-4 {
     padding: 110px 12px;
 }
@@ -1319,3 +1322,87 @@ header .container {
     opacity: 1;
     visibility: visible;
 }
+/* =============== */
+.animation-gif {
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    width: 100%;
+    position: relative;
+  }
+  .gif-ani {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+  .gif-ani img {
+    width: 100%;
+    height: 100%;
+  }
+  .gif-1 {
+    width: 65%;
+    height: 65%;
+  }
+  .gif-2 {
+    width: 85%;
+    height: 85%;
+  }
+  .avatar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    max-width: 62px;
+  }
+  .lit {
+    width: 60%;
+    position: absolute;
+    top: 3%;
+    left: 20%;
+  }
+  .ava-sm {
+    width: 40px;
+    height: 40px;
+    background-image: url(avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  .ava-1 {
+    top: 13px;
+    left: 30px;
+  }
+  .ava-2 {
+    top: 18px;
+    right: 24px;
+  }
+  .ava-3 {
+    top: -15px;
+    left: 116px;
+  }
+  .rotate-elem {
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+  }
+  .rotate-elem-slow {
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-direction: reverse;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
